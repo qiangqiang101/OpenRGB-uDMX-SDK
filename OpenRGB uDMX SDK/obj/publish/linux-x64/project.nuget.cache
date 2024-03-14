@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "5hkRsiZ9P9yrpZeutPPcKwQheTFz6Cc8WwCVWhAGxuXeO+a6IqW8cTkiLpUK/3kF70pbrwM7opBJex2JJD/tiA==",
+  "success": true,
+  "projectFilePath": "E:\\Users\\Admin\\Documents\\GitHub\\OpenRGB-uDMX-SDK\\OpenRGB uDMX SDK\\OpenRGB uDMX SDK.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\libusb-win32-driver\\1.2.6\\libusb-win32-driver.1.2.6.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\libusbdotnet\\2.2.29\\libusbdotnet.2.2.29.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.net.illink.analyzers\\7.0.100-1.23211.1\\microsoft.net.illink.analyzers.7.0.100-1.23211.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.net.illink.tasks\\7.0.100-1.23211.1\\microsoft.net.illink.tasks.7.0.100-1.23211.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\openrgb.net\\1.7.0\\openrgb.net.1.7.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.security.accesscontrol\\4.5.0\\system.security.accesscontrol.4.5.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.host.linux-x64\\6.0.27\\microsoft.netcore.app.host.linux-x64.6.0.27.nupkg.sha512"
+  ],
+  "logs": []
+}

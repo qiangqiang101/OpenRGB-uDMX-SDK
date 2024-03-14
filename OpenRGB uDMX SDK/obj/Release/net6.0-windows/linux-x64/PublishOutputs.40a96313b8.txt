@@ -1,0 +1,2 @@
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\bin\Release\net6.0-windows\publish\linux-x64\OpenRGB uDMX SDK.pdb
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\bin\Release\net6.0-windows\publish\linux-x64\OpenRGB uDMX SDK

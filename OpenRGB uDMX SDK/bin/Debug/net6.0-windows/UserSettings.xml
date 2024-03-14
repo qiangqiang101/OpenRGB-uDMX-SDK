@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserSettingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <IpAddress>127.0.0.1</IpAddress>
+  <Port>6742</Port>
+  <RedChannel>7</RedChannel>
+  <GreenChannel>8</GreenChannel>
+  <BlueChannel>9</BlueChannel>
+  <WhiteChannel>10</WhiteChannel>
+  <SmoothnessChannel>5</SmoothnessChannel>
+  <BrightnessChannel>6</BrightnessChannel>
+  <RotationXChannel>1</RotationXChannel>
+  <RotationYChannel>3</RotationYChannel>
+  <DeviceName>DMX Device Group</DeviceName>
+  <DeviceZoneColor>uDMX</DeviceZoneColor>
+  <DeviceZoneXY>uDMX XY</DeviceZoneXY>
+</UserSettingData>

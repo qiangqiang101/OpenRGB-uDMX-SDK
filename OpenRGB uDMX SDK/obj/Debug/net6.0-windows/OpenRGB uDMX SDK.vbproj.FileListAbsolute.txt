@@ -1,0 +1,20 @@
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Debug\net6.0-windows\OpenRGB uDMX SDK.vbproj.AssemblyReference.cache
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Debug\net6.0-windows\OpenRGB_uDMX_SDK.frmMain.resources
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Debug\net6.0-windows\OpenRGB uDMX SDK.vbproj.GenerateResource.cache
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Debug\net6.0-windows\OpenRGB uDMX SDK.GeneratedMSBuildEditorConfig.editorconfig
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Debug\net6.0-windows\OpenRGB uDMX SDK.AssemblyInfoInputs.cache
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Debug\net6.0-windows\OpenRGB uDMX SDK.AssemblyInfo.vb
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Debug\net6.0-windows\OpenRGB uDMX SDK.vbproj.CoreCompileInputs.cache
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\bin\Debug\net6.0-windows\OpenRGB uDMX SDK.exe
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\bin\Debug\net6.0-windows\OpenRGB uDMX SDK.deps.json
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\bin\Debug\net6.0-windows\OpenRGB uDMX SDK.runtimeconfig.json
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\bin\Debug\net6.0-windows\OpenRGB uDMX SDK.dll
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\bin\Debug\net6.0-windows\OpenRGB uDMX SDK.pdb
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\bin\Debug\net6.0-windows\LibUsbDotNet.LibUsbDotNet.dll
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\bin\Debug\net6.0-windows\OpenRGB.NET.dll
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Debug\net6.0-windows\OpenRGB uDMX SDK.dll
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Debug\net6.0-windows\refint\OpenRGB uDMX SDK.dll
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Debug\net6.0-windows\OpenRGB uDMX SDK.pdb
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Debug\net6.0-windows\OpenRGB uDMX SDK.genruntimeconfig.cache
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Debug\net6.0-windows\ref\OpenRGB uDMX SDK.dll
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Debug\net6.0-windows\OpenRGB .FB0FD85E.Up2Date

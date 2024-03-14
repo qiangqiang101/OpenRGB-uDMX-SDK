@@ -1,0 +1,20 @@
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\bin\Release\net6.0-windows\linux-x64\OpenRGB uDMX SDK
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\bin\Release\net6.0-windows\linux-x64\OpenRGB uDMX SDK.deps.json
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\bin\Release\net6.0-windows\linux-x64\OpenRGB uDMX SDK.runtimeconfig.json
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\bin\Release\net6.0-windows\linux-x64\OpenRGB uDMX SDK.dll
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\bin\Release\net6.0-windows\linux-x64\OpenRGB uDMX SDK.pdb
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\bin\Release\net6.0-windows\linux-x64\LibUsbDotNet.LibUsbDotNet.dll
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\bin\Release\net6.0-windows\linux-x64\OpenRGB.NET.dll
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Release\net6.0-windows\linux-x64\OpenRGB uDMX SDK.vbproj.AssemblyReference.cache
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Release\net6.0-windows\linux-x64\OpenRGB_uDMX_SDK.frmMain.resources
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Release\net6.0-windows\linux-x64\OpenRGB uDMX SDK.vbproj.GenerateResource.cache
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Release\net6.0-windows\linux-x64\OpenRGB uDMX SDK.GeneratedMSBuildEditorConfig.editorconfig
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Release\net6.0-windows\linux-x64\OpenRGB uDMX SDK.AssemblyInfoInputs.cache
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Release\net6.0-windows\linux-x64\OpenRGB uDMX SDK.AssemblyInfo.vb
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Release\net6.0-windows\linux-x64\OpenRGB uDMX SDK.vbproj.CoreCompileInputs.cache
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Release\net6.0-windows\linux-x64\OpenRGB .FB0FD85E.Up2Date
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Release\net6.0-windows\linux-x64\OpenRGB uDMX SDK.dll
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Release\net6.0-windows\linux-x64\refint\OpenRGB uDMX SDK.dll
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Release\net6.0-windows\linux-x64\OpenRGB uDMX SDK.pdb
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Release\net6.0-windows\linux-x64\OpenRGB uDMX SDK.genruntimeconfig.cache
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Release\net6.0-windows\linux-x64\ref\OpenRGB uDMX SDK.dll
