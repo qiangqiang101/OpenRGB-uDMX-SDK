@@ -23,6 +23,7 @@ Partial Class frmMain
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Label1 = New Label()
         cmbDeviceName = New ComboBox()
         cmbDeviceZone = New ComboBox()
@@ -75,6 +76,7 @@ Partial Class frmMain
         btnSave = New Button()
         timerRGB = New Timer(components)
         timerXY = New Timer(components)
+        niNotify = New NotifyIcon(components)
         gbChannels.SuspendLayout()
         CType(tbCh10, ComponentModel.ISupportInitialize).BeginInit()
         CType(tbCh9, ComponentModel.ISupportInitialize).BeginInit()
@@ -108,7 +110,9 @@ Partial Class frmMain
         ' 
         ' cmbDeviceName
         ' 
+        cmbDeviceName.BackColor = SystemColors.ControlDarkDark
         cmbDeviceName.DropDownStyle = ComboBoxStyle.DropDownList
+        cmbDeviceName.ForeColor = SystemColors.ControlLightLight
         cmbDeviceName.FormattingEnabled = True
         cmbDeviceName.Location = New Point(112, 138)
         cmbDeviceName.Name = "cmbDeviceName"
@@ -117,7 +121,9 @@ Partial Class frmMain
         ' 
         ' cmbDeviceZone
         ' 
+        cmbDeviceZone.BackColor = SystemColors.ControlDarkDark
         cmbDeviceZone.DropDownStyle = ComboBoxStyle.DropDownList
+        cmbDeviceZone.ForeColor = SystemColors.ControlLightLight
         cmbDeviceZone.FormattingEnabled = True
         cmbDeviceZone.Location = New Point(112, 167)
         cmbDeviceZone.Name = "cmbDeviceZone"
@@ -154,13 +160,14 @@ Partial Class frmMain
         ' btnConnect
         ' 
         btnConnect.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        btnConnect.BackColor = SystemColors.ControlDarkDark
         btnConnect.Location = New Point(452, 12)
         btnConnect.Name = "btnConnect"
         btnConnect.Size = New Size(75, 23)
         btnConnect.TabIndex = 3
         btnConnect.Tag = "start"
         btnConnect.Text = "Connect"
-        btnConnect.UseVisualStyleBackColor = True
+        btnConnect.UseVisualStyleBackColor = False
         ' 
         ' gbChannels
         ' 
@@ -185,6 +192,7 @@ Partial Class frmMain
         gbChannels.Controls.Add(tbCh2)
         gbChannels.Controls.Add(Label5)
         gbChannels.Controls.Add(tbCh1)
+        gbChannels.ForeColor = SystemColors.ControlLightLight
         gbChannels.Location = New Point(12, 276)
         gbChannels.Name = "gbChannels"
         gbChannels.Size = New Size(515, 373)
@@ -211,6 +219,7 @@ Partial Class frmMain
         tbCh10.Orientation = Orientation.Vertical
         tbCh10.Size = New Size(45, 328)
         tbCh10.TabIndex = 9
+        tbCh10.TickFrequency = 5
         tbCh10.TickStyle = TickStyle.Both
         ' 
         ' Label13
@@ -232,6 +241,7 @@ Partial Class frmMain
         tbCh9.Orientation = Orientation.Vertical
         tbCh9.Size = New Size(45, 328)
         tbCh9.TabIndex = 8
+        tbCh9.TickFrequency = 5
         tbCh9.TickStyle = TickStyle.Both
         ' 
         ' Label12
@@ -253,6 +263,7 @@ Partial Class frmMain
         tbCh8.Orientation = Orientation.Vertical
         tbCh8.Size = New Size(45, 328)
         tbCh8.TabIndex = 7
+        tbCh8.TickFrequency = 5
         tbCh8.TickStyle = TickStyle.Both
         ' 
         ' Label11
@@ -274,6 +285,7 @@ Partial Class frmMain
         tbCh7.Orientation = Orientation.Vertical
         tbCh7.Size = New Size(45, 328)
         tbCh7.TabIndex = 6
+        tbCh7.TickFrequency = 5
         tbCh7.TickStyle = TickStyle.Both
         ' 
         ' Label10
@@ -295,6 +307,7 @@ Partial Class frmMain
         tbCh6.Orientation = Orientation.Vertical
         tbCh6.Size = New Size(45, 328)
         tbCh6.TabIndex = 5
+        tbCh6.TickFrequency = 5
         tbCh6.TickStyle = TickStyle.Both
         ' 
         ' Label9
@@ -316,6 +329,7 @@ Partial Class frmMain
         tbCh5.Orientation = Orientation.Vertical
         tbCh5.Size = New Size(45, 328)
         tbCh5.TabIndex = 4
+        tbCh5.TickFrequency = 5
         tbCh5.TickStyle = TickStyle.Both
         ' 
         ' Label8
@@ -337,6 +351,7 @@ Partial Class frmMain
         tbCh4.Orientation = Orientation.Vertical
         tbCh4.Size = New Size(45, 328)
         tbCh4.TabIndex = 3
+        tbCh4.TickFrequency = 5
         tbCh4.TickStyle = TickStyle.Both
         ' 
         ' Label7
@@ -358,6 +373,7 @@ Partial Class frmMain
         tbCh3.Orientation = Orientation.Vertical
         tbCh3.Size = New Size(45, 328)
         tbCh3.TabIndex = 2
+        tbCh3.TickFrequency = 5
         tbCh3.TickStyle = TickStyle.Both
         ' 
         ' Label6
@@ -379,6 +395,7 @@ Partial Class frmMain
         tbCh2.Orientation = Orientation.Vertical
         tbCh2.Size = New Size(45, 328)
         tbCh2.TabIndex = 1
+        tbCh2.TickFrequency = 5
         tbCh2.TickStyle = TickStyle.Both
         ' 
         ' Label5
@@ -400,10 +417,13 @@ Partial Class frmMain
         tbCh1.Orientation = Orientation.Vertical
         tbCh1.Size = New Size(45, 328)
         tbCh1.TabIndex = 0
+        tbCh1.TickFrequency = 5
         tbCh1.TickStyle = TickStyle.Both
         ' 
         ' nudRed
         ' 
+        nudRed.BackColor = SystemColors.ControlDarkDark
+        nudRed.ForeColor = SystemColors.ControlLightLight
         nudRed.Location = New Point(113, 22)
         nudRed.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         nudRed.Name = "nudRed"
@@ -445,6 +465,7 @@ Partial Class frmMain
         GroupBox2.Controls.Add(cmbDeviceZone)
         GroupBox2.Controls.Add(Label2)
         GroupBox2.Controls.Add(Label1)
+        GroupBox2.ForeColor = SystemColors.ControlLightLight
         GroupBox2.Location = New Point(12, 41)
         GroupBox2.Name = "GroupBox2"
         GroupBox2.Size = New Size(515, 229)
@@ -454,7 +475,9 @@ Partial Class frmMain
         ' 
         ' cmbDeviceZoneXY
         ' 
+        cmbDeviceZoneXY.BackColor = SystemColors.ControlDarkDark
         cmbDeviceZoneXY.DropDownStyle = ComboBoxStyle.DropDownList
+        cmbDeviceZoneXY.ForeColor = SystemColors.ControlLightLight
         cmbDeviceZoneXY.FormattingEnabled = True
         cmbDeviceZoneXY.Location = New Point(112, 196)
         cmbDeviceZoneXY.Name = "cmbDeviceZoneXY"
@@ -472,6 +495,8 @@ Partial Class frmMain
         ' 
         ' nudY
         ' 
+        nudY.BackColor = SystemColors.ControlDarkDark
+        nudY.ForeColor = SystemColors.ControlLightLight
         nudY.Location = New Point(321, 109)
         nudY.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         nudY.Name = "nudY"
@@ -499,6 +524,8 @@ Partial Class frmMain
         ' 
         ' nudX
         ' 
+        nudX.BackColor = SystemColors.ControlDarkDark
+        nudX.ForeColor = SystemColors.ControlLightLight
         nudX.Location = New Point(113, 109)
         nudX.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         nudX.Name = "nudX"
@@ -517,6 +544,8 @@ Partial Class frmMain
         ' 
         ' nudWhite
         ' 
+        nudWhite.BackColor = SystemColors.ControlDarkDark
+        nudWhite.ForeColor = SystemColors.ControlLightLight
         nudWhite.Location = New Point(113, 80)
         nudWhite.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         nudWhite.Name = "nudWhite"
@@ -535,6 +564,8 @@ Partial Class frmMain
         ' 
         ' nudSmooth
         ' 
+        nudSmooth.BackColor = SystemColors.ControlDarkDark
+        nudSmooth.ForeColor = SystemColors.ControlLightLight
         nudSmooth.Location = New Point(321, 80)
         nudSmooth.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         nudSmooth.Name = "nudSmooth"
@@ -553,6 +584,8 @@ Partial Class frmMain
         ' 
         ' nudBright
         ' 
+        nudBright.BackColor = SystemColors.ControlDarkDark
+        nudBright.ForeColor = SystemColors.ControlLightLight
         nudBright.Location = New Point(321, 51)
         nudBright.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         nudBright.Name = "nudBright"
@@ -571,6 +604,8 @@ Partial Class frmMain
         ' 
         ' nudBlue
         ' 
+        nudBlue.BackColor = SystemColors.ControlDarkDark
+        nudBlue.ForeColor = SystemColors.ControlLightLight
         nudBlue.Location = New Point(113, 51)
         nudBlue.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         nudBlue.Name = "nudBlue"
@@ -589,6 +624,8 @@ Partial Class frmMain
         ' 
         ' nudGreen
         ' 
+        nudGreen.BackColor = SystemColors.ControlDarkDark
+        nudGreen.ForeColor = SystemColors.ControlLightLight
         nudGreen.Location = New Point(321, 22)
         nudGreen.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         nudGreen.Name = "nudGreen"
@@ -598,6 +635,8 @@ Partial Class frmMain
         ' 
         ' txtIpAddress
         ' 
+        txtIpAddress.BackColor = SystemColors.ControlDarkDark
+        txtIpAddress.ForeColor = SystemColors.ControlLightLight
         txtIpAddress.Location = New Point(38, 12)
         txtIpAddress.Name = "txtIpAddress"
         txtIpAddress.Size = New Size(173, 23)
@@ -606,6 +645,8 @@ Partial Class frmMain
         ' 
         ' txtPort
         ' 
+        txtPort.BackColor = SystemColors.ControlDarkDark
+        txtPort.ForeColor = SystemColors.ControlLightLight
         txtPort.Location = New Point(255, 12)
         txtPort.Name = "txtPort"
         txtPort.Size = New Size(72, 23)
@@ -615,12 +656,13 @@ Partial Class frmMain
         ' btnSave
         ' 
         btnSave.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        btnSave.BackColor = SystemColors.ControlDarkDark
         btnSave.Location = New Point(371, 12)
         btnSave.Name = "btnSave"
         btnSave.Size = New Size(75, 23)
         btnSave.TabIndex = 2
         btnSave.Text = "Save"
-        btnSave.UseVisualStyleBackColor = True
+        btnSave.UseVisualStyleBackColor = False
         ' 
         ' timerRGB
         ' 
@@ -630,10 +672,20 @@ Partial Class frmMain
         ' 
         timerXY.Interval = 1000
         ' 
+        ' niNotify
+        ' 
+        niNotify.BalloonTipIcon = ToolTipIcon.Info
+        niNotify.BalloonTipText = "You can access setting by right clicking the icon."
+        niNotify.BalloonTipTitle = "OpenRGB uDMX SDK"
+        niNotify.Icon = CType(resources.GetObject("niNotify.Icon"), Icon)
+        niNotify.Text = "OpenRGB uDMX SDK"
+        niNotify.Visible = True
+        ' 
         ' frmMain
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.ControlDarkDark
         ClientSize = New Size(539, 661)
         Controls.Add(btnSave)
         Controls.Add(txtPort)
@@ -644,6 +696,8 @@ Partial Class frmMain
         Controls.Add(Label4)
         Controls.Add(Label3)
         DoubleBuffered = True
+        ForeColor = SystemColors.ControlLightLight
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MinimumSize = New Size(555, 482)
         Name = "frmMain"
         StartPosition = FormStartPosition.CenterScreen
@@ -726,5 +780,6 @@ Partial Class frmMain
     Friend WithEvents timerXY As Timer
     Friend WithEvents cmbDeviceZoneXY As ComboBox
     Friend WithEvents Label23 As Label
+    Friend WithEvents niNotify As NotifyIcon
 
 End Class

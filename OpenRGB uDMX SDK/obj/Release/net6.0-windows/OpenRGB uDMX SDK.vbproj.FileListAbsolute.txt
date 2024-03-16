@@ -18,3 +18,4 @@ E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Release\ne
 E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Release\net6.0-windows\OpenRGB uDMX SDK.pdb
 E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Release\net6.0-windows\OpenRGB uDMX SDK.genruntimeconfig.cache
 E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Release\net6.0-windows\ref\OpenRGB uDMX SDK.dll
+E:\Users\Admin\Documents\GitHub\OpenRGB-uDMX-SDK\OpenRGB uDMX SDK\obj\Release\net6.0-windows\OpenRGB uDMX SDK.sourcelink.json

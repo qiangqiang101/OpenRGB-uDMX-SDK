@@ -15,11 +15,11 @@ Imports System
 Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("OpenRGB uDMX SDK"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Release"),  _
- Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42be1e38af2b867c07c3cd3f72b656b08e3edd55"),  _
+ Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.1.0"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22024969d50314a32f32c1b4f62c6f70215eec9a"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("OpenRGB uDMX SDK"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("OpenRGB uDMX SDK"),  _
- Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
+ Assembly: System.Reflection.AssemblyVersionAttribute("1.0.1.0"),  _
  Assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0"),  _
  Assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")> 
 

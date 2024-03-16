@@ -3,15 +3,13 @@ Imports System.Security.Policy
 Imports OpenRGB.NET
 Imports OColor = OpenRGB.NET.Color
 Imports Color = System.Drawing.Color
+Imports Microsoft.VisualBasic.ApplicationServices
 
 Public Class frmMain
 
     Private oRgbClient As OpenRGBClient
     Private lastColor As Color = Color.Black
     Private lastXY As Color = Color.Black
-
-    Private colorZone As Integer = 0
-    Private xyZone As Integer = 0
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If Not File.Exists(UserSettingFile) Then
@@ -49,12 +47,15 @@ Public Class frmMain
                                 .DeviceZoneColor = Nothing
                                 .DeviceZoneXY = Nothing
                             End If
+                        Else
+                            MsgBox("Connection attempt failed, Local OpenRGB server unavailable.", MsgBoxStyle.Critical, "Error")
                         End If
                     End Using
                 Catch ex As Exception
-                    .DeviceName = Nothing
-                    .DeviceZoneColor = Nothing
-                    .DeviceZoneXY = Nothing
+                    MsgBox("Connection attempt failed, Local OpenRGB server unavailable.", MsgBoxStyle.Critical, "Error")
+                    .DeviceName = ""
+                    .DeviceZoneColor = ""
+                    .DeviceZoneXY = ""
                 End Try
 
                 .SaveSilentXml()
@@ -65,16 +66,21 @@ Public Class frmMain
 
         Try
             Using oRgbClient As New OpenRgbClient(UserSettings.IpAddress, UserSettings.Port, "Getting devices information", protocolVersionNumber:=4)
-                For Each device In oRgbClient.GetAllControllerData.Where(Function(x) x.Type = DeviceType.Ledstrip AndAlso x.Description = "DMX Device")
-                    cmbDeviceName.Items.Add(device.Name)
-                Next
-                cmbDeviceName.SelectedItem = UserSettings.DeviceName
-                For Each zone In oRgbClient.GetAllControllerData.Where(Function(x) x.Name = cmbDeviceName.SelectedItem).FirstOrDefault.Zones
-                    cmbDeviceZone.Items.Add(zone.Name)
-                    cmbDeviceZoneXY.Items.Add(zone.Name)
-                Next
-                cmbDeviceZone.SelectedItem = UserSettings.DeviceZoneColor
-                cmbDeviceZoneXY.SelectedItem = UserSettings.DeviceZoneXY
+                If oRgbClient.Connected Then
+                    For Each device In oRgbClient.GetAllControllerData.Where(Function(x) x.Type = DeviceType.Ledstrip AndAlso x.Description = "DMX Device")
+                        cmbDeviceName.Items.Add(device.Name)
+                    Next
+                    cmbDeviceName.SelectedItem = UserSettings.DeviceName
+                    If cmbDeviceName.SelectedItem = Nothing Then cmbDeviceName.SelectedIndex = 0
+                    For Each zone In oRgbClient.GetAllControllerData.Where(Function(x) x.Name = cmbDeviceName.SelectedItem).FirstOrDefault.Zones
+                        cmbDeviceZone.Items.Add(zone.Name)
+                        cmbDeviceZoneXY.Items.Add(zone.Name)
+                    Next
+                    cmbDeviceZone.SelectedItem = UserSettings.DeviceZoneColor
+                    cmbDeviceZoneXY.SelectedItem = UserSettings.DeviceZoneXY
+                Else
+                    MsgBox("Connection attempt failed, Local OpenRGB server unavailable.", MsgBoxStyle.Critical, "Error")
+                End If
             End Using
         Catch ex As Exception
             cmbDeviceName.Items.Add(UserSettings.DeviceName)
@@ -135,10 +141,21 @@ Public Class frmMain
                 btnConnect.Tag = "stop"
 
                 If oRgbClient.Connected Then
-                    Dim device = oRgbClient.GetAllControllerData.Where(Function(x) x.Name = UserSettings.DeviceName).FirstOrDefault
-                    If device IsNot Nothing Then
-                        colorZone = device.Zones.Where(Function(x) x.Name = UserSettings.DeviceZoneColor).FirstOrDefault.LedCount - 1
-                        xyZone = device.Zones.Where(Function(x) x.Name = UserSettings.DeviceZoneXY).FirstOrDefault.LedCount + colorZone
+                    If UserSettings.DeviceName.Length <= 1 Then
+                        cmbDeviceName.Items.Clear()
+                        cmbDeviceZone.Items.Clear()
+                        cmbDeviceZoneXY.Items.Clear()
+
+                        For Each device In oRgbClient.GetAllControllerData.Where(Function(x) x.Type = DeviceType.Ledstrip AndAlso x.Description = "DMX Device")
+                            cmbDeviceName.Items.Add(device.Name)
+                        Next
+                        cmbDeviceName.SelectedItem = UserSettings.DeviceName
+                        For Each zone In oRgbClient.GetAllControllerData.Where(Function(x) x.Name = cmbDeviceName.SelectedItem).FirstOrDefault.Zones
+                            cmbDeviceZone.Items.Add(zone.Name)
+                            cmbDeviceZoneXY.Items.Add(zone.Name)
+                        Next
+                        cmbDeviceZone.SelectedItem = UserSettings.DeviceZoneColor
+                        cmbDeviceZoneXY.SelectedItem = UserSettings.DeviceZoneXY
                     End If
                 End If
             End If
@@ -154,10 +171,12 @@ Public Class frmMain
         If oRgbClient IsNot Nothing Then
             If oRgbClient.Connected Then
                 cmbDeviceZone.Items.Clear()
+                cmbDeviceZoneXY.Items.Clear()
 
                 Try
                     For Each zone In oRgbClient.GetAllControllerData.Where(Function(x) x.Name = cmbDeviceName.SelectedItem).FirstOrDefault.Zones
                         cmbDeviceZone.Items.Add(zone.Name)
+                        cmbDeviceZoneXY.Items.Add(zone.Name)
                     Next
                 Catch ex As Exception
                 End Try
@@ -256,6 +275,23 @@ Public Class frmMain
         Using dmx As UDMX = New UDMX()
             dmx.SetSingleChannel(scr.TabIndex, CByte(scr.Value))
         End Using
+    End Sub
+
+    Private Sub niNotify_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles niNotify.MouseDoubleClick
+        Visible = True
+        WindowState = FormWindowState.Normal
+        ShowInTaskbar = True
+        niNotify.Visible = False
+    End Sub
+
+    Private Sub frmMain_SizeChanged(sender As Object, e As EventArgs) Handles Me.SizeChanged
+        If WindowState = FormWindowState.Minimized Then
+            niNotify.Visible = True
+            ShowInTaskbar = False
+        Else
+            niNotify.Visible = False
+            ShowInTaskbar = True
+        End If
     End Sub
 
 End Class

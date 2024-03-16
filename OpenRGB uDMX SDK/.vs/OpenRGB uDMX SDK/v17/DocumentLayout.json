@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{ADD956CD-1879-4EB8-8918-7FDC1AD0B7CE}|OpenRGB uDMX SDK.vbproj|solutionrelative:openrgb udmx sdk.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{ADD956CD-1879-4EB8-8918-7FDC1AD0B7CE}|OpenRGB uDMX SDK.vbproj|E:\\Users\\Admin\\Documents\\GitHub\\OpenRGB-uDMX-SDK\\OpenRGB uDMX SDK\\frmmain.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{ADD956CD-1879-4EB8-8918-7FDC1AD0B7CE}|OpenRGB uDMX SDK.vbproj|solutionrelative:frmmain.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ADD956CD-1879-4EB8-8918-7FDC1AD0B7CE}|OpenRGB uDMX SDK.vbproj|E:\\Users\\Admin\\Documents\\GitHub\\OpenRGB-uDMX-SDK\\OpenRGB uDMX SDK\\frmmain.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{ADD956CD-1879-4EB8-8918-7FDC1AD0B7CE}|OpenRGB uDMX SDK.vbproj|solutionrelative:frmmain.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ADD956CD-1879-4EB8-8918-7FDC1AD0B7CE}|OpenRGB uDMX SDK.vbproj|E:\\Users\\Admin\\Documents\\GitHub\\OpenRGB-uDMX-SDK\\OpenRGB uDMX SDK\\helper.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{ADD956CD-1879-4EB8-8918-7FDC1AD0B7CE}|OpenRGB uDMX SDK.vbproj|solutionrelative:helper.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADD956CD-1879-4EB8-8918-7FDC1AD0B7CE}|OpenRGB uDMX SDK.vbproj|E:\\Users\\Admin\\Documents\\GitHub\\OpenRGB-uDMX-SDK\\OpenRGB uDMX SDK\\frmmain.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{ADD956CD-1879-4EB8-8918-7FDC1AD0B7CE}|OpenRGB uDMX SDK.vbproj|solutionrelative:frmmain.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ADD956CD-1879-4EB8-8918-7FDC1AD0B7CE}|OpenRGB uDMX SDK.vbproj|E:\\Users\\Admin\\Documents\\GitHub\\OpenRGB-uDMX-SDK\\OpenRGB uDMX SDK\\udmx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -45,12 +45,12 @@
               "ToolTip": "E:\\Users\\Admin\\Documents\\GitHub\\OpenRGB-uDMX-SDK\\OpenRGB uDMX SDK\\OpenRGB uDMX SDK.vbproj",
               "RelativeToolTip": "OpenRGB uDMX SDK.vbproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003380|",
-              "WhenOpened": "2024-03-14T16:58:32.307Z",
+              "WhenOpened": "2024-03-16T09:06:03.36Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "frmMain.vb [Design]",
               "DocumentMoniker": "E:\\Users\\Admin\\Documents\\GitHub\\OpenRGB-uDMX-SDK\\OpenRGB uDMX SDK\\frmMain.vb",
               "RelativeDocumentMoniker": "frmMain.vb",
@@ -88,26 +88,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Helper.vb",
               "DocumentMoniker": "E:\\Users\\Admin\\Documents\\GitHub\\OpenRGB-uDMX-SDK\\OpenRGB uDMX SDK\\Helper.vb",
               "RelativeDocumentMoniker": "Helper.vb",
               "ToolTip": "E:\\Users\\Admin\\Documents\\GitHub\\OpenRGB-uDMX-SDK\\OpenRGB uDMX SDK\\Helper.vb",
               "RelativeToolTip": "Helper.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAcAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-03-08T15:36:18.76Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "frmMain.vb",
               "DocumentMoniker": "E:\\Users\\Admin\\Documents\\GitHub\\OpenRGB-uDMX-SDK\\OpenRGB uDMX SDK\\frmMain.vb",
               "RelativeDocumentMoniker": "frmMain.vb",
               "ToolTip": "E:\\Users\\Admin\\Documents\\GitHub\\OpenRGB-uDMX-SDK\\OpenRGB uDMX SDK\\frmMain.vb",
               "RelativeToolTip": "frmMain.vb",
-              "ViewState": "AQIAALoAAAAAAAAAAAAAAMQAAABMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-03-08T15:05:45.499Z",
               "EditorCaption": ""
