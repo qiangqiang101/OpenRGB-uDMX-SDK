@@ -1,5 +1,11 @@
 # OpenRGB SDK uDMX Controller
 
+
+
+https://github.com/qiangqiang101/OpenRGB-uDMX-SDK/assets/11488961/0edf7cb5-bed1-4798-b5bc-aa8048617ab4
+
+
+
 ![Github All Releases](https://img.shields.io/github/downloads/qiangqiang101/OpenRGB-uDMX-SDK/total.svg)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/qiangqiang101/OpenRGB-uDMX-SDK)
 ![GitHub](https://img.shields.io/github/license/qiangqiang101/OpenRGB-uDMX-SDK)
